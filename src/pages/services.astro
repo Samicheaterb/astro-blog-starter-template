@@ -1,0 +1,221 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Services | ${SITE_TITLE}`} description="Therapy and psychological services offered by Dr. Taylor Stuteville — including first responder therapy, anxiety & depression treatment, chronic pain psychology, and stress management." />
+	</head>
+	<body>
+		<Header />
+
+		<section class="page-hero">
+			<div class="container">
+				<p class="section-label">Our Services</p>
+				<h1>Therapy &amp; Psychological Services</h1>
+				<p class="page-hero-desc">Evidence-based care tailored to your unique needs and goals.</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="services-list">
+
+					<div class="service-detail" id="first-responders">
+						<div class="service-detail-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+						</div>
+						<div class="service-detail-content">
+							<h2>First Responder &amp; Emergency Personnel Therapy</h2>
+							<p>Law enforcement officers, firefighters, EMTs, dispatchers, and other emergency personnel face unique psychological challenges in their line of work. Dr. Stuteville provides a confidential, judgment-free space specifically designed for those who serve.</p>
+							<h4>Areas of Focus:</h4>
+							<ul>
+								<li>Critical incident stress and trauma processing</li>
+								<li>Occupational burnout and compassion fatigue</li>
+								<li>Post-traumatic stress symptoms</li>
+								<li>Sleep disturbances and hypervigilance</li>
+								<li>Relationship strain from shift work and high-stress roles</li>
+								<li>Performance anxiety and decision-making under pressure</li>
+								<li>Transition and retirement challenges</li>
+							</ul>
+							<a href="/first-responders" class="btn btn-outline">Learn More About First Responder Services</a>
+						</div>
+					</div>
+
+					<div class="service-detail" id="anxiety-depression">
+						<div class="service-detail-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+						</div>
+						<div class="service-detail-content">
+							<h2>Anxiety &amp; Depression Treatment</h2>
+							<p>Anxiety and depression are among the most common mental health concerns, and they can significantly impact every area of your life. Dr. Stuteville uses evidence-based approaches to help you understand and manage symptoms so you can regain a sense of control.</p>
+							<h4>Treatment May Address:</h4>
+							<ul>
+								<li>Generalized anxiety and persistent worry</li>
+								<li>Panic attacks and phobias</li>
+								<li>Social anxiety</li>
+								<li>Major depressive episodes</li>
+								<li>Persistent low mood and loss of interest</li>
+								<li>Emotional regulation difficulties</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-detail" id="chronic-pain">
+						<div class="service-detail-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+						</div>
+						<div class="service-detail-content">
+							<h2>Chronic Pain Psychology</h2>
+							<p>Chronic pain is more than a physical experience — it affects mood, relationships, work, and daily functioning. Dr. Stuteville integrates psychological strategies to help you manage pain's emotional and cognitive impact alongside your medical care.</p>
+							<h4>Treatment May Address:</h4>
+							<ul>
+								<li>Pain-related anxiety and depression</li>
+								<li>Catastrophic thinking and fear-avoidance</li>
+								<li>Sleep disruption from chronic pain</li>
+								<li>Activity pacing and functional restoration</li>
+								<li>Coping strategies and pain acceptance</li>
+								<li>Mind-body techniques for pain management</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-detail" id="stress">
+						<div class="service-detail-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+						</div>
+						<div class="service-detail-content">
+							<h2>Stress Management &amp; Resilience</h2>
+							<p>Whether stress comes from work, relationships, life transitions, or the cumulative weight of daily demands, building effective coping strategies is essential. Dr. Stuteville helps clients develop practical tools for managing stress and building long-term resilience.</p>
+							<h4>Treatment May Address:</h4>
+							<ul>
+								<li>Work-life balance and occupational stress</li>
+								<li>Burnout and emotional exhaustion</li>
+								<li>Life transitions and adjustment</li>
+								<li>Grief and loss</li>
+								<li>Relationship difficulties</li>
+								<li>Performance under pressure</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-detail" id="children-adolescents">
+						<div class="service-detail-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+						</div>
+						<div class="service-detail-content">
+							<h2>Children &amp; Adolescent Services</h2>
+							<p>Dr. Stuteville has experience working with children and adolescents facing a variety of emotional and behavioral challenges. Her approach is developmentally informed, collaborative, and focused on building skills that young people can carry with them.</p>
+							<h4>Treatment May Address:</h4>
+							<ul>
+								<li>Behavioral challenges and emotional regulation</li>
+								<li>Anxiety and school-related stress</li>
+								<li>Depression and mood changes</li>
+								<li>Family transitions and adjustment</li>
+								<li>Social skills and peer relationships</li>
+								<li>Trauma and adverse childhood experiences</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta">
+			<div class="container text-center">
+				<h2>Not Sure Where to Start?</h2>
+				<p>That's okay. Reach out and we'll find the right path together.</p>
+				<a href="/contact" class="btn btn-white">Schedule a Consultation</a>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-hero {
+		background: var(--slate-900);
+		color: var(--white);
+		padding: 4rem 0;
+	}
+	.page-hero .section-label {
+		color: var(--teal-400);
+		font-weight: 600;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: 0.5rem;
+	}
+	.page-hero h1 { color: var(--white); margin-bottom: 0.5rem; }
+	.page-hero-desc { color: var(--slate-400); font-size: 1.25rem; margin: 0; }
+
+	.services-list {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+	.service-detail {
+		display: grid;
+		grid-template-columns: 80px 1fr;
+		gap: 2rem;
+		padding: 2.5rem;
+		background: var(--bg-secondary);
+		border-radius: 16px;
+		border: 1px solid var(--border);
+	}
+	.service-detail-icon {
+		color: var(--accent);
+		padding-top: 0.25rem;
+	}
+	.service-detail-content h2 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	.service-detail-content p {
+		color: var(--text-secondary);
+		line-height: 1.8;
+	}
+	.service-detail-content h4 {
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+		font-size: 1rem;
+		color: var(--text-primary);
+	}
+	.service-detail-content ul {
+		padding-left: 1.25rem;
+		color: var(--text-secondary);
+		margin-bottom: 1.5rem;
+	}
+	.service-detail-content li {
+		padding: 0.2rem 0;
+		line-height: 1.7;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--teal-700) 0%, var(--teal-600) 100%);
+		color: var(--white);
+		padding: 5rem 0;
+	}
+	.cta h2 { color: var(--white); margin-bottom: 1rem; }
+	.cta p {
+		color: rgba(255, 255, 255, 0.85);
+		font-size: 1.125rem;
+		max-width: 600px;
+		margin: 0 auto 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.service-detail {
+			grid-template-columns: 1fr;
+			gap: 1rem;
+			padding: 1.5rem;
+		}
+	}
+</style>
