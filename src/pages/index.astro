@@ -8,43 +8,380 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`${SITE_TITLE} | Clinical Psychology in Overland Park, KS`} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
+
+		<!-- Hero -->
+		<section class="hero">
+			<div class="hero-inner">
+				<div class="hero-content">
+					<p class="hero-label">Slate Psychology &mdash; Overland Park, KS</p>
+					<h1>Compassionate Care for Those Who Serve &amp; Protect</h1>
+					<p class="hero-desc">Dr. Taylor Stuteville, PsyD provides evidence-based therapy for emergency responders, first responders, and individuals navigating anxiety, depression, chronic pain, and life transitions.</p>
+					<div class="hero-actions">
+						<a href="/contact" class="btn btn-primary">Schedule a Consultation</a>
+						<a href="/about" class="btn btn-outline">Meet Dr. Stuteville</a>
+					</div>
+				</div>
+				<div class="hero-image">
+					<div class="hero-image-placeholder">
+						<!-- Placeholder for hero photo -->
+						<svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+							<circle cx="12" cy="7" r="4"/>
+						</svg>
+						<span>Professional Photo</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Trust Indicators -->
+		<section class="trust">
+			<div class="container">
+				<div class="trust-grid">
+					<div class="trust-item">
+						<div class="trust-icon">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+						</div>
+						<div>
+							<strong>PsyD, Kansas City University</strong>
+							<p>Doctoral-level clinical training</p>
+						</div>
+					</div>
+					<div class="trust-item">
+						<div class="trust-icon">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+						</div>
+						<div>
+							<strong>First Responder Specialist</strong>
+							<p>Dedicated to those who serve</p>
+						</div>
+					</div>
+					<div class="trust-item">
+						<div class="trust-icon">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+						</div>
+						<div>
+							<strong>Children &amp; Adults</strong>
+							<p>All ages welcome</p>
+						</div>
+					</div>
+					<div class="trust-item">
+						<div class="trust-icon">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+						</div>
+						<div>
+							<strong>Accepting New Clients</strong>
+							<p>Begin your path forward</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Preview -->
+		<section class="section">
+			<div class="container">
+				<div class="about-preview">
+					<div class="about-photo-placeholder">
+						<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+							<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/>
+							<circle cx="9" cy="9" r="2"/>
+							<path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+						</svg>
+						<span>Dr. Stuteville Photo</span>
+					</div>
+					<div class="about-text">
+						<p class="section-label">About Dr. Stuteville</p>
+						<h2>A Psychologist Who Understands What You Face</h2>
+						<p>Dr. Taylor Stuteville earned her Doctor of Psychology (PsyD) from Kansas City University and her undergraduate degree in Psychology from the University of Kansas. With specialized training in working with emergency responders and law enforcement, she brings a unique understanding of the challenges faced by those in high-stress, high-stakes professions.</p>
+						<p>Her research on diaphragmatic breathing techniques and their impact on performance under pressure in law enforcement reflects her commitment to evidence-based approaches that make a real difference.</p>
+						<a href="/about" class="btn btn-outline">Learn More About Dr. Stuteville</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services -->
+		<section class="section-alt">
+			<div class="container">
+				<div class="text-center" style="margin-bottom: 3rem;">
+					<p class="section-label">What We Offer</p>
+					<h2>Therapy &amp; Psychological Services</h2>
+					<p class="text-muted" style="max-width: 600px; margin: 1rem auto 0;">Evidence-based treatment tailored to your unique needs and goals.</p>
+				</div>
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+						</div>
+						<h3>First Responder Therapy</h3>
+						<p>Specialized support for law enforcement, firefighters, EMTs, and other emergency personnel dealing with occupational stress, trauma, and burnout.</p>
+						<a href="/first-responders">Learn more &rarr;</a>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+						</div>
+						<h3>Anxiety &amp; Depression</h3>
+						<p>Effective, compassionate treatment for anxiety disorders, depression, and mood-related challenges using proven therapeutic approaches.</p>
+						<a href="/services">Learn more &rarr;</a>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+						</div>
+						<h3>Stress Management</h3>
+						<p>Learn practical, science-backed strategies to manage stress, build resilience, and improve your overall well-being and daily functioning.</p>
+						<a href="/services">Learn more &rarr;</a>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">
+							<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+						</div>
+						<h3>Chronic Pain Psychology</h3>
+						<p>Psychological strategies for living with and managing chronic pain, addressing the emotional toll and building coping mechanisms.</p>
+						<a href="/services">Learn more &rarr;</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta">
+			<div class="container text-center">
+				<h2>Ready to Take the First Step?</h2>
+				<p>Reaching out is a sign of strength. Whether you're a first responder or simply looking for support, Dr. Stuteville is here to help you move forward.</p>
+				<div class="cta-actions">
+					<a href="/contact" class="btn btn-white">Schedule a Consultation</a>
+					<a href="tel:(913) 220-2450" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Call (913) 220-2450</a>
+				</div>
+			</div>
+		</section>
+
 		<Footer />
 	</body>
 </html>
+
+<style>
+	/* Hero */
+	.hero {
+		background: linear-gradient(135deg, var(--slate-900) 0%, var(--slate-800) 100%);
+		color: var(--white);
+		padding: 5rem 0;
+	}
+	.hero-inner {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+		display: grid;
+		grid-template-columns: 1.2fr 0.8fr;
+		gap: 4rem;
+		align-items: center;
+	}
+	.hero-label {
+		color: var(--teal-400);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: 1rem;
+	}
+	.hero h1 {
+		color: var(--white);
+		font-size: 3.25rem;
+		line-height: 1.1;
+		margin-bottom: 1.5rem;
+	}
+	.hero-desc {
+		color: var(--slate-300);
+		font-size: 1.125rem;
+		line-height: 1.7;
+		margin-bottom: 2rem;
+	}
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.hero .btn-outline {
+		border-color: rgba(255, 255, 255, 0.3);
+		color: var(--white);
+	}
+	.hero .btn-outline:hover {
+		background: var(--white);
+		color: var(--slate-900);
+		border-color: var(--white);
+	}
+	.hero-image-placeholder {
+		background: var(--slate-700);
+		border-radius: 16px;
+		aspect-ratio: 3 / 4;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: var(--slate-400);
+		gap: 1rem;
+		font-size: 0.875rem;
+		max-height: 450px;
+	}
+
+	/* Trust */
+	.trust {
+		padding: 3rem 0;
+		background: var(--bg-secondary);
+		border-bottom: 1px solid var(--border);
+	}
+	.trust-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+	}
+	.trust-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+	.trust-icon {
+		flex-shrink: 0;
+		color: var(--accent);
+		margin-top: 2px;
+	}
+	.trust-item strong {
+		display: block;
+		font-size: 0.9375rem;
+		color: var(--text-primary);
+	}
+	.trust-item p {
+		margin: 0.25rem 0 0;
+		font-size: 0.8125rem;
+		color: var(--text-muted);
+	}
+
+	/* Section label */
+	.section-label {
+		color: var(--accent);
+		font-weight: 600;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: 0.5rem;
+	}
+
+	/* About Preview */
+	.about-preview {
+		display: grid;
+		grid-template-columns: 0.8fr 1.2fr;
+		gap: 4rem;
+		align-items: center;
+	}
+	.about-photo-placeholder {
+		background: var(--slate-100);
+		border-radius: 16px;
+		aspect-ratio: 3 / 4;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: var(--slate-400);
+		gap: 1rem;
+		font-size: 0.875rem;
+	}
+	.about-text h2 {
+		margin-bottom: 1.5rem;
+	}
+	.about-text p {
+		color: var(--text-secondary);
+		line-height: 1.8;
+	}
+	.about-text .btn {
+		margin-top: 1rem;
+	}
+
+	/* Services */
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+	.service-card {
+		background: var(--white);
+		padding: 2rem;
+		border-radius: 12px;
+		border: 1px solid var(--border);
+		transition: all 0.2s ease;
+	}
+	.service-card:hover {
+		border-color: var(--accent);
+		box-shadow: 0 4px 20px rgba(13, 148, 136, 0.1);
+		transform: translateY(-2px);
+	}
+	.service-icon {
+		color: var(--accent);
+		margin-bottom: 1rem;
+	}
+	.service-card h3 {
+		font-size: 1.25rem;
+		margin-bottom: 0.75rem;
+	}
+	.service-card p {
+		color: var(--text-secondary);
+		font-size: 0.9375rem;
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+	.service-card a {
+		font-weight: 600;
+		font-size: 0.9375rem;
+	}
+
+	/* CTA */
+	.cta {
+		background: linear-gradient(135deg, var(--teal-700) 0%, var(--teal-600) 100%);
+		color: var(--white);
+		padding: 5rem 0;
+	}
+	.cta h2 {
+		color: var(--white);
+		margin-bottom: 1rem;
+	}
+	.cta p {
+		color: rgba(255, 255, 255, 0.85);
+		font-size: 1.125rem;
+		max-width: 600px;
+		margin: 0 auto 2rem;
+	}
+	.cta-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 768px) {
+		.hero-inner {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		.hero h1 { font-size: 2.25rem; }
+		.hero-image { display: none; }
+		.trust-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.5rem;
+		}
+		.about-preview {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		.about-photo-placeholder {
+			max-height: 300px;
+		}
+		.services-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

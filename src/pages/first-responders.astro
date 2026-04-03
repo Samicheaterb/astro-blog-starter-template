@@ -1,0 +1,337 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`First Responder Therapy | ${SITE_TITLE}`} description="Specialized therapy for law enforcement, firefighters, EMTs, and emergency personnel in Overland Park, KS. Dr. Taylor Stuteville understands the unique challenges first responders face." />
+	</head>
+	<body>
+		<Header />
+
+		<!-- Hero -->
+		<section class="fr-hero">
+			<div class="container">
+				<div class="fr-hero-content">
+					<p class="section-label">Specialized Care</p>
+					<h1>Therapy for Those Who Protect &amp; Serve</h1>
+					<p class="fr-hero-desc">You spend your career taking care of others. Dr. Stuteville provides a confidential, judgment-free space where you can take care of yourself.</p>
+					<a href="/contact" class="btn btn-primary">Get Started</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Understanding -->
+		<section class="section">
+			<div class="container-narrow">
+				<h2>Why Specialized First Responder Therapy Matters</h2>
+				<p>First responders encounter experiences that most people will never face. Repeated exposure to traumatic events, the pressure of split-second life-or-death decisions, irregular schedules, and a culture that often discourages vulnerability can take a significant toll on mental health.</p>
+				<p>Dr. Stuteville's work with law enforcement through the Kansas City Regional Police Academy gave her firsthand insight into the psychological demands of first responder roles. Her doctoral research studied how diaphragmatic breathing interventions can improve performance under pressure in law enforcement settings, demonstrating her commitment to practical, applicable solutions.</p>
+				<p>Standard therapeutic approaches don't always fit the needs of first responders. Dr. Stuteville adapts her methods to honor the realities of your profession while providing effective, evidence-based care.</p>
+			</div>
+		</section>
+
+		<!-- Who We Serve -->
+		<section class="section-alt">
+			<div class="container">
+				<div class="text-center" style="margin-bottom: 3rem;">
+					<h2>Who We Serve</h2>
+					<p class="text-muted" style="max-width:600px; margin:1rem auto 0;">Dr. Stuteville works with all branches of emergency services.</p>
+				</div>
+				<div class="serve-grid">
+					<div class="serve-card">
+						<div class="serve-icon">
+							<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+						</div>
+						<h3>Law Enforcement</h3>
+						<p>Police officers, detectives, sheriffs, federal agents, corrections officers</p>
+					</div>
+					<div class="serve-card">
+						<div class="serve-icon">
+							<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+						</div>
+						<h3>Firefighters</h3>
+						<p>Career and volunteer firefighters, fire investigators, fire department leadership</p>
+					</div>
+					<div class="serve-card">
+						<div class="serve-icon">
+							<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+						</div>
+						<h3>EMS &amp; Medical</h3>
+						<p>Paramedics, EMTs, emergency room staff, crisis intervention teams</p>
+					</div>
+					<div class="serve-card">
+						<div class="serve-icon">
+							<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+						</div>
+						<h3>Dispatchers &amp; Support</h3>
+						<p>911 dispatchers, victim advocates, crisis negotiators, support staff</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Common Concerns -->
+		<section class="section">
+			<div class="container">
+				<div class="concerns-grid">
+					<div class="concerns-text">
+						<h2>Common Concerns We Address</h2>
+						<p>You don't need to be in crisis to benefit from therapy. Many first responders seek support for issues that develop gradually over a career of service.</p>
+					</div>
+					<div class="concerns-list">
+						<div class="concern-item">
+							<div class="concern-marker"></div>
+							<div>
+								<strong>Post-Traumatic Stress</strong>
+								<p>Intrusive memories, nightmares, hypervigilance, and emotional numbness following critical incidents or cumulative trauma exposure.</p>
+							</div>
+						</div>
+						<div class="concern-item">
+							<div class="concern-marker"></div>
+							<div>
+								<strong>Burnout &amp; Compassion Fatigue</strong>
+								<p>Emotional exhaustion, cynicism, and reduced sense of personal accomplishment from prolonged service demands.</p>
+							</div>
+						</div>
+						<div class="concern-item">
+							<div class="concern-marker"></div>
+							<div>
+								<strong>Sleep &amp; Hypervigilance</strong>
+								<p>Difficulty sleeping, staying in a constant state of alertness, inability to relax when off duty.</p>
+							</div>
+						</div>
+						<div class="concern-item">
+							<div class="concern-marker"></div>
+							<div>
+								<strong>Relationship Strain</strong>
+								<p>Communication breakdowns, emotional withdrawal, and difficulty balancing family life with the demands of the job.</p>
+							</div>
+						</div>
+						<div class="concern-item">
+							<div class="concern-marker"></div>
+							<div>
+								<strong>Anger &amp; Irritability</strong>
+								<p>Increased frustration, short temper, or difficulty managing emotional reactions at work or at home.</p>
+							</div>
+						</div>
+						<div class="concern-item">
+							<div class="concern-marker"></div>
+							<div>
+								<strong>Career Transitions</strong>
+								<p>Navigating retirement, role changes, or re-evaluating your relationship with the profession.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Approach -->
+		<section class="section-alt">
+			<div class="container-narrow text-center">
+				<h2>A Therapeutic Approach That Fits</h2>
+				<p class="text-muted" style="max-width:600px; margin: 1rem auto 2.5rem;">Dr. Stuteville understands that first responders often approach therapy differently. Her practice is built around these principles:</p>
+			</div>
+			<div class="container">
+				<div class="approach-grid">
+					<div class="approach-item">
+						<h3>Confidential &amp; Private</h3>
+						<p>What happens in session stays in session. Your career and reputation are protected.</p>
+					</div>
+					<div class="approach-item">
+						<h3>No-Judgment Zone</h3>
+						<p>You won't be asked to justify your experiences. Your reactions make sense in context.</p>
+					</div>
+					<div class="approach-item">
+						<h3>Practical &amp; Direct</h3>
+						<p>Evidence-based strategies you can actually use, both on the job and at home.</p>
+					</div>
+					<div class="approach-item">
+						<h3>Culturally Informed</h3>
+						<p>Therapy that respects the culture, language, and realities of emergency service work.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta">
+			<div class="container text-center">
+				<h2>Asking for Help Is a Sign of Strength</h2>
+				<p>You've trained to handle the unimaginable. Let Dr. Stuteville help you handle the rest.</p>
+				<div class="cta-actions">
+					<a href="/contact" class="btn btn-white">Schedule a Consultation</a>
+					<a href="tel:(913) 220-2450" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">Call (913) 220-2450</a>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.fr-hero {
+		background: linear-gradient(135deg, var(--slate-900) 0%, var(--slate-800) 100%);
+		color: var(--white);
+		padding: 6rem 0;
+	}
+	.fr-hero-content {
+		max-width: 700px;
+	}
+	.fr-hero .section-label {
+		color: var(--teal-400);
+		font-weight: 600;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: 0.5rem;
+	}
+	.fr-hero h1 {
+		color: var(--white);
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+	.fr-hero-desc {
+		color: var(--slate-300);
+		font-size: 1.25rem;
+		line-height: 1.7;
+		margin-bottom: 2rem;
+	}
+
+	.section .container-narrow h2 {
+		margin-bottom: 1.5rem;
+	}
+	.section .container-narrow p {
+		color: var(--text-secondary);
+		line-height: 1.8;
+	}
+
+	.serve-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.5rem;
+	}
+	.serve-card {
+		background: var(--white);
+		padding: 2rem;
+		border-radius: 12px;
+		border: 1px solid var(--border);
+		text-align: center;
+	}
+	.serve-icon {
+		color: var(--accent);
+		margin-bottom: 1rem;
+	}
+	.serve-card h3 {
+		font-size: 1.125rem;
+		margin-bottom: 0.5rem;
+	}
+	.serve-card p {
+		color: var(--text-secondary);
+		font-size: 0.875rem;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.concerns-grid {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr;
+		gap: 4rem;
+		align-items: start;
+	}
+	.concerns-text h2 {
+		margin-bottom: 1rem;
+	}
+	.concerns-text p {
+		color: var(--text-secondary);
+		line-height: 1.8;
+	}
+	.concerns-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	.concern-item {
+		display: flex;
+		gap: 1rem;
+		align-items: flex-start;
+	}
+	.concern-marker {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: var(--accent);
+		flex-shrink: 0;
+		margin-top: 0.5rem;
+	}
+	.concern-item strong {
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+	.concern-item p {
+		color: var(--text-secondary);
+		font-size: 0.9375rem;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.approach-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.5rem;
+	}
+	.approach-item {
+		background: var(--white);
+		padding: 2rem;
+		border-radius: 12px;
+		border: 1px solid var(--border);
+	}
+	.approach-item h3 {
+		font-size: 1.125rem;
+		margin-bottom: 0.75rem;
+		color: var(--accent-dark);
+	}
+	.approach-item p {
+		color: var(--text-secondary);
+		font-size: 0.9375rem;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--teal-700) 0%, var(--teal-600) 100%);
+		color: var(--white);
+		padding: 5rem 0;
+	}
+	.cta h2 { color: var(--white); margin-bottom: 1rem; }
+	.cta p {
+		color: rgba(255, 255, 255, 0.85);
+		font-size: 1.125rem;
+		max-width: 600px;
+		margin: 0 auto 2rem;
+	}
+	.cta-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 768px) {
+		.fr-hero { padding: 4rem 0; }
+		.fr-hero h1 { font-size: 2.25rem; }
+		.serve-grid { grid-template-columns: repeat(2, 1fr); }
+		.concerns-grid { grid-template-columns: 1fr; gap: 2rem; }
+		.approach-grid { grid-template-columns: 1fr 1fr; }
+	}
+	@media (max-width: 480px) {
+		.serve-grid { grid-template-columns: 1fr; }
+		.approach-grid { grid-template-columns: 1fr; }
+	}
+</style>
